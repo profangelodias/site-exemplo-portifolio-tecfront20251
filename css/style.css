@@ -1,0 +1,97 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GERAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* MAIN CONTEÚDO */
+main {
+  padding: 30px;
+}
+
+/* SECTIONS */
+.intro {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 6px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.intro:hover {
+  transform: scale(1.02);
+}
+
+.video-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.video-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* GALERIA */
+.galeria .imagens {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(3.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ANIMAÇÃO */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
